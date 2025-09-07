@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vithuckshana Surenthiren – Portfolio</title>
+  <meta name="description" content="Portfolio of Vithuckshana Surenthiren – BSc(Hons) Information Systems undergraduate. Full‑stack & cybersecurity enthusiast. Projects, skills, and contact."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ["Inter", "ui-sans-serif", "system-ui"] },
+          colors: {
+            primary: {
+              50: '#eff6ff', 100: '#dbeafe', 200: '#bfdbfe', 300: '#93c5fd',
+              400: '#60a5fa', 500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8',
+              800: '#1e40af', 900: '#1e3a8a'
+            }
+          }
+        }
+      },
+      darkMode: 'class'
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .glass { backdrop-filter: blur(10px); background: rgba(255,255,255,0.7); }
+    .dark .glass { background: rgba(15,23,42,0.6); }
+  </style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100">
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 border-b border-slate-200/60 dark:border-slate-800/60 bg-white/70 dark:bg-slate-900/60 glass">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#home" class="font-extrabold tracking-tight text-xl sm:text-2xl">Vithuckshana<span class="text-primary-600">.</span></a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#about" class="hover:text-primary-600">About</a>
+        <a href="#skills" class="hover:text-primary-600">Skills</a>
+        <a href="#projects" class="hover:text-primary-600">Projects</a>
+        <a href="#goals" class="hover:text-primary-600">Goals</a>
+        <a href="#contact" class="hover:text-primary-600">Contact</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <a href="https://github.com/vithuckshana" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 rounded-xl px-3 py-2 text-sm border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 transition">
+          <!-- GitHub icon -->
+          <svg aria-hidden="true" viewBox="0 0 24 24" class="w-5 h-5"><path fill="currentColor" d="M12 .5A11.5 11.5 0 0 0 .5 12.3c0 5.2 3.3 9.6 7.8 11.2.6.1.8-.3.8-.6v-2c-3.2.7-3.8-1.4-3.8-1.4-.6-1.5-1.4-1.9-1.4-1.9-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.3 1.8 1.3 1.1 1.9 2.9 1.4 3.6 1.1.1-.8.4-1.4.7-1.7-2.6-.3-5.3-1.3-5.3-6 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.7 11.7 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.7-2.7 5.7-5.3 6 .4.4.7 1.1.7 2.2v3.2c0 .3.2.7.8.6 4.5-1.6 7.8-6 7.8-11.2A11.5 11.5 0 0 0 12 .5Z"/></svg>
+          <span class="hidden sm:inline">GitHub</span>
+        </a>
+        <a href="http://www.linkedin.com/in/vithuckshana-surenthiran-b51a7b34" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 rounded-xl px-3 py-2 text-sm border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 transition">
+          <!-- LinkedIn icon -->
+          <svg aria-hidden="true" viewBox="0 0 24 24" class="w-5 h-5"><path fill="currentColor" d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8.5h4V23h-4V8.5zM8.5 8.5h3.8v2h.1c.6-1 2.1-2.1 4.3-2.1 4.6 0 5.4 3 5.4 6.9V23h-4v-5.9c0-1.4 0-3.2-2-3.2s-2.3 1.6-2.3 3.1V23h-4V8.5z"/></svg>
+          <span class="hidden sm:inline">LinkedIn</span>
+        </a>
+        <button id="themeToggle" class="ml-1 rounded-xl px-3 py-2 text-sm border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 transition" aria-label="Toggle dark mode">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home"  >
+
+    <!-- <div class="absolute inset-0 bg-gradient-to-b from-primary-50 to-transparent dark:from-primary-900/20"></div> -->
+    <div class="max-w-6xl mx-auto px-4 pt-20 pb-16 grid md:grid-cols-2 items-center gap-10">
+      <div>
+        <p class="text-sm uppercase tracking-widest text-primary-600 font-semibold">Portfolio</p>
+        <h1 class="mt-3 text-4xl sm:text-5xl font-extrabold leading-tight">
+          Vithuckshana Surenthiren
+        </h1>
+        <p class="mt-4 text-lg text-slate-600 dark:text-slate-300 max-w-prose">
+          Undergraduate (BSc Hons) in Information Systems at Sabaragamuwa University of Sri Lanka. Passionate about full‑stack development, UI/UX, and exploring secure web solutions with interests in Machine Learning, AI, and cybersecurity.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3 scroll-smooth">
+  <button>
+    <a href="#projects" class="inline-flex items-center px-5 py-3 rounded-xl bg-primary-600 hover:bg-primary-700 text-white font-semibold shadow cursor-pointer">
+    View Projects
+  </a></button><button><a href="#contact" class="inline-flex items-center px-5 py-3 rounded-xl border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 font-semibold">
+    Contact Me
+  </a></button>
+  
+</div>
+
+      </div>
+      <div class="flex justify-center md:justify-end">
+        <img src="c:\Users\ADMIN\Desktop\portfolio\WhatsApp Image 2025-09-07 at 09.49.39_e42ac33a.jpg" alt="Vithuckshana Surenthiren" class="w-full h-full object-cover"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-start">
+      <div class="bg-white/70 dark:bg-slate-800/60 rounded-2xl border border-slate-200 dark:border-slate-700 p-6 shadow-sm">
+        <h2 class="text-2xl font-bold">About</h2>
+        <p class="mt-4 leading-relaxed text-slate-700 dark:text-slate-300">
+          Hi! I’m <span class="font-semibold">Vithuckshana</span>, an Information Systems undergraduate who enjoys turning ideas into clean, responsive apps. I love working across the stack—from crafting interfaces to wiring up APIs—and I’m especially curious about how to build <span class="font-semibold">secure</span>, user‑friendly products.
+        </p>
+        <ul class="mt-6 space-y-2 text-slate-700 dark:text-slate-300">
+          <li>🎓 BSc(Hons) in Information Systems — Sabaragamuwa University of Sri Lanka</li>
+          <li>🧭 Based in Sri Lanka</li>
+          <li>🤝 Open to collaborations & internships</li>
+        </ul>
+      </div>
+      <div class="bg-white/70 dark:bg-slate-800/60 rounded-2xl border border-slate-200 dark:border-slate-700 p-6 shadow-sm">
+        <h3 class="text-xl font-bold">Quick Facts</h3>
+        <div class="mt-4 grid sm:grid-cols-2 gap-4">
+          <div class="rounded-xl p-4 border border-slate-200 dark:border-slate-700">
+            <p class="text-sm text-slate-500">Focus</p>
+            <p class="font-semibold">Full‑stack, UI/UX, Cybersecurity</p>
+          </div>
+          <div class="rounded-xl p-4 border border-slate-200 dark:border-slate-700">
+            <p class="text-sm text-slate-500">Learning</p>
+            <p class="font-semibold">React, Node.js, Java, DB Design</p>
+          </div>
+          <div class="rounded-xl p-4 border border-slate-200 dark:border-slate-700">
+            <p class="text-sm text-slate-500">Tools</p>
+            <p class="font-semibold">VS Code, Figma, Git/GitHub</p>
+          </div>
+          <div class="rounded-xl p-4 border border-slate-200 dark:border-slate-700">
+            <p class="text-sm text-slate-500">Soft Skills</p>
+            <p class="font-semibold">Teamwork, Communication, Curiosity</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-16 bg-slate-100/60 dark:bg-slate-800/40">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold">Tech Stack & Skills</h2>
+      <div class="mt-8 grid md:grid-cols-2 gap-6">
+        <div class="rounded-2xl p-6 bg-white/80 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-700">
+          <h3 class="font-semibold">Frontend</h3>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded-full bg-primary-100 text-primary-800 dark:bg-primary-900/40 dark:text-primary-200">HTML</span>
+            <span class="px-3 py-1 rounded-full bg-primary-100 text-primary-800 dark:bg-primary-900/40 dark:text-primary-200">CSS</span>
+            <span class="px-3 py-1 rounded-full bg-primary-100 text-primary-800 dark:bg-primary-900/40 dark:text-primary-200">JavaScript</span>
+            <span class="px-3 py-1 rounded-full bg-primary-100 text-primary-800 dark:bg-primary-900/40 dark:text-primary-200">React</span>
+          </div>
+        </div>
+        <div class="rounded-2xl p-6 bg-white/80 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-700">
+          <h3 class="font-semibold">Backend</h3>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded-full bg-slate-200/80 dark:bg-slate-700/60">Node.js</span>
+            <span class="px-3 py-1 rounded-full bg-slate-200/80 dark:bg-slate-700/60">Java (basic)</span>
+          </div>
+        </div>
+        <div class="rounded-2xl p-6 bg-white/80 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-700">
+          <h3 class="font-semibold">UI/UX & Tools</h3>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded-full bg-slate-200/80 dark:bg-slate-700/60">Figma (basic)</span>
+            <span class="px-3 py-1 rounded-full bg-slate-200/80 dark:bg-slate-700/60">Git & GitHub</span>
+            <span class="px-3 py-1 rounded-full bg-slate-200/80 dark:bg-slate-700/60">VS Code</span>
+          </div>
+        </div>
+        <div class="rounded-2xl p-6 bg-white/80 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-700">
+          <h3 class="font-semibold">Databases & Concepts</h3>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded-full bg-slate-200/80 dark:bg-slate-700/60">SQL</span>
+            <span class="px-3 py-1 rounded-full bg-slate-200/80 dark:bg-slate-700/60">NoSQL</span>
+            <span class="px-3 py-1 rounded-full bg-slate-200/80 dark:bg-slate-700/60">ML & AI (concepts)</span>
+            <span class="px-3 py-1 rounded-full bg-slate-200/80 dark:bg-slate-700/60">Cybersecurity Interest</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-end justify-between gap-4">
+        <h2 class="text-2xl font-bold">Projects</h2>
+        <a href="https://github.com/vithuckshana?tab=repositories" target="_blank" class="text-primary-600 hover:text-primary-700 font-semibold">View all →</a>
+      </div>
+      <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Project Card 1 -->
+        <article class="group rounded-2xl border border-slate-200 dark:border-slate-700 bg-white/80 dark:bg-slate-900/40 p-6 hover:-translate-y-1 hover:shadow-lg transition">
+          <h3 class="font-semibold group-hover:text-primary-600"><a href="https://github.com/vithuckshana/skills-introduction-to-github" target="_blank" rel="noreferrer">skills-introduction-to-github</a></h3>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Intro repository demonstrating GitHub basics and workflows.</p>
+          <div class="mt-4 flex flex-wrap gap-2 text-xs">
+            <span class="px-2 py-1 rounded bg-slate-200/80 dark:bg-slate-700/60">Git</span>
+            <span class="px-2 py-1 rounded bg-slate-200/80 dark:bg-slate-700/60">GitHub</span>
+          </div>
+        </article>
+        <!-- Project Card 2 -->
+        <article class="group rounded-2xl border border-slate-200 dark:border-slate-700 bg-white/80 dark:bg-slate-900/40 p-6 hover:-translate-y-1 hover:shadow-lg transition">
+          <h3 class="font-semibold group-hover:text-primary-600"><a href="https://github.com/vithuckshana/intro-to-github" target="_blank" rel="noreferrer">intro-to-github</a></h3>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Hands‑on practice repo covering commits, branches, and PRs.</p>
+          <div class="mt-4 flex flex-wrap gap-2 text-xs">
+            <span class="px-2 py-1 rounded bg-slate-200/80 dark:bg-slate-700/60">Version Control</span>
+            <span class="px-2 py-1 rounded bg-slate-200/80 dark:bg-slate-700/60">Collaboration</span>
+          </div>
+        </article>
+        <!-- Project Card 3 -->
+        <article class="group rounded-2xl border border-slate-200 dark:border-slate-700 bg-white/80 dark:bg-slate-900/40 p-6 hover:-translate-y-1 hover:shadow-lg transition">
+          <h3 class="font-semibold group-hover:text-primary-600"><a href="https://github.com/vithuckshana/symmetrical-octo-memory" target="_blank" rel="noreferrer">symmetrical-octo-memory</a></h3>
+          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Sandbox repository for experiments and learning.</p>
+          <div class="mt-4 flex flex-wrap gap-2 text-xs">
+            <span class="px-2 py-1 rounded bg-slate-200/80 dark:bg-slate-700/60">Practice</span>
+            <span class="px-2 py-1 rounded bg-slate-200/80 dark:bg-slate-700/60">Playground</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Goals -->
+  <section id="goals" class="py-16 bg-slate-100/60 dark:bg-slate-800/40">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold">Current Goals</h2>
+      <ul class="mt-6 grid md:grid-cols-2 gap-4">
+        <li class="rounded-xl p-4 border border-slate-200 dark:border-slate-700 bg-white/80 dark:bg-slate-900/40">Strengthen full‑stack skills with React & Node.js</li>
+        <li class="rounded-xl p-4 border border-slate-200 dark:border-slate-700 bg-white/80 dark:bg-slate-900/40">Improve UI/UX to build clean, accessible interfaces</li>
+        <li class="rounded-xl p-4 border border-slate-200 dark:border-slate-700 bg-white/80 dark:bg-slate-900/40">Deepen understanding of databases & system design</li>
+        <li class="rounded-xl p-4 border border-slate-200 dark:border-slate-700 bg-white/80 dark:bg-slate-900/40">Contribute to open‑source & collaborate with community</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="rounded-2xl p-8 bg-gradient-to-br from-primary-600 to-primary-700 text-white shadow-lg">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+          <div>
+            <h2 class="text-2xl font-bold">Let’s build something!</h2>
+            <p class="mt-2 text-white/90">I’m open to internships, freelance opportunities, and collaborations.</p>
+          </div>
+          <div class="flex flex-wrap gap-3">
+            <a href="mailto:svithu2002@gmail.com" class="inline-flex items-center gap-2 bg-white text-slate-900 hover:bg-slate-100 font-semibold px-5 py-3 rounded-xl">
+              📧 Email
+            </a>
+            <a href="https://github.com/vithuckshana" target="_blank" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 font-semibold px-5 py-3 rounded-xl">GitHub</a>
+            <a href="http://www.linkedin.com/in/vithuckshana-surenthiran-b51a7b34" target="_blank" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 font-semibold px-5 py-3 rounded-xl">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-10">
+    <div class="max-w-6xl mx-auto px-4 text-center text-sm text-slate-500">
+      © <span id="year"></span> Vithuckshana Surenthiren 
+    </div>
+  </footer>
+
+  <script>
+    // Init year
+    document.getElementById('year').textContent = new Date().getFullYear()
+    // Theme toggle
+    const toggle = document.getElementById('themeToggle')
+    const root = document.documentElement
+    const stored = localStorage.getItem('theme')
+    if (stored === 'dark' || (!stored && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      root.classList.add('dark')
+    }
+    toggle.addEventListener('click', () => {
+      root.classList.toggle('dark')
+      localStorage.setItem('theme', root.classList.contains('dark') ? 'dark' : 'light')
+    })
+  </script>
+</body>
+</html>
